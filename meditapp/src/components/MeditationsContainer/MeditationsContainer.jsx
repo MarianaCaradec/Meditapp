@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
+
 import './MeditationsContainer.css'
+
 import { dataBase } from '../../services/firebaseConfig'
 import {collection, getDocs} from 'firebase/firestore'
-import MeditationsList from '../MeditationsList/MeditationsList'
+
+import Meditation from '../Meditation/Meditation'
+
 
 export const MeditationsContainer = () => {
     const [meditations, setMeditations] = useState([])
@@ -13,7 +17,6 @@ export const MeditationsContainer = () => {
         getDocs(meditationsRef).then(snapshot => {
             const dataMeditations = snapshot.docs.map(doc => {
                 const dataDoc = doc.data()
-                console.log(doc.data())
                 return {id: doc.id, ...dataDoc}
             })
             setMeditations(dataMeditations)
@@ -25,12 +28,14 @@ export const MeditationsContainer = () => {
     }
 
     return (
-        <div>
-            <h2>Comienza la meditación del día de hoy 🙌🏼</h2>
-            <h3>Elige el tipo de meditación que quieres realizar:</h3>
-            {meditations && 
-                <MeditationsList meditations={meditations}/>
-            }            
-        </div>
+      <div>
+        {meditations.length > 0 &&
+          meditations.map(meditation => {
+            return (
+              <Meditation key={meditation.id} meditation={meditation}/>
+            )
+          })
+        }
+      </div>
     )
 }
