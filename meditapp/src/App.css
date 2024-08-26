@@ -6,14 +6,13 @@
 
 body {
   background-color: #B865B8;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
-  font-family: "Lato", sans-serif;
   color: #B865B8;
 }
-h2, h3 {
-  font-family: "Lato", sans-serif;
+h2, h3, h4 {
   color: #e6e3db;
   margin-top: 2rem;
 }
@@ -27,5 +26,10 @@ h2 {
   padding-bottom: 2rem;
 }
 h3 {
+  margin-left: 1rem;
   font-size: 2.6rem;
+}
+h4 {
+  margin-left: 1rem;
+  font-size: 2.4rem;
 }

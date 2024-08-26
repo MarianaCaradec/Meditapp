@@ -1,22 +1,21 @@
 .navegacion {
     background-color: #e6e3db;
-    height: 20vh;
+    width: 100vw;
     display: flex;
-    flex-direction: space-between;
+    flex-direction: space-around;
     justify-content: center;
 }
-h2 {
-    color: #B865B8;
-}
 .link {
-    font-family: "Lato", sans-serif;
     font-size: 2.6rem;
     color: #B865B8;
     outline: none;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    padding: 2rem;
+    padding: 2rem 0;
+}
+.link h2 {
+    color: #B865B8;
 }
 .link:focus {
     background-color: #d5d3cd;
@@ -26,8 +25,9 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.6rem;
     
 }
 .logo img {
-    width: 4vw;
+    width: 5vw;
 }

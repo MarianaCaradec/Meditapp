@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png'
 export const NavBar = () => {
     return (
         <div className='navegacion'>
-            <Link className='link' to={'/'}><h1>Meditapp <img src="./logo.png" alt="logo"/></h1> </Link>
+            <Link className='logo' to={'/'}><h1>Meditapp <img src={logo} alt="logo"/></h1> </Link>
             <Link className='link' to={'/informacion'}><h2>Qué es la meditación</h2></Link>
         </div>
     )
