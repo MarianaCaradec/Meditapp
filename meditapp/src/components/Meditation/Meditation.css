@@ -1,0 +1,25 @@
+.meditation {
+    margin: 1.5rem 0;
+    width: 30vw;
+}
+.meditation h4 {
+    text-align: center;
+}
+
+.meditationId {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #d5d3cd;
+}
+.meditationId:hover {
+    color: #892889;
+}
+
+.button {
+    padding: 1rem;
+    margin: 2rem 13rem;
+    background-color: #892889;
+}
+.button:hover {
+    background-color: #d5d3cd;
+}

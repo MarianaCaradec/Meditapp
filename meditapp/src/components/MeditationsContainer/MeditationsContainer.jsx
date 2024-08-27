@@ -28,7 +28,7 @@ export const MeditationsContainer = () => {
     }
 
     return (
-      <div>
+      <div className='meditations'>
         {meditations.length > 0 &&
           meditations.map(meditation => {
             return (
