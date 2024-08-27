@@ -1,0 +1,21 @@
+.info {
+    margin: 2rem 1rem;
+}
+.info h3 {
+    margin: 1rem 0;
+}
+.info p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.info a {
+    text-decoration: none;
+    outline: none;
+    font-size: 2rem;
+    color: #892889;
+}
+.info a:hover {
+    color: #e6e3db;
+    cursor: pointer;
+}
