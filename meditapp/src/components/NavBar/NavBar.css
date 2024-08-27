@@ -1,6 +1,7 @@
 .navegacion {
     background-color: #e6e3db;
     width: 100vw;
+    height: 17vh;
     display: flex;
     flex-direction: space-around;
     justify-content: center;
@@ -16,6 +17,7 @@
 }
 .link h2 {
     color: #B865B8;
+    margin: 3rem 1rem 2rem 1rem;
 }
 .link:focus {
     background-color: #d5d3cd;

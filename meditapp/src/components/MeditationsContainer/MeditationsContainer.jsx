@@ -28,14 +28,21 @@ export const MeditationsContainer = () => {
     }
 
     return (
-      <div className='meditations'>
-        {meditations.length > 0 &&
-          meditations.map(meditation => {
-            return (
-              <Meditation key={meditation.id} meditation={meditation}/>
-            )
-          })
+      <>
+        <div className='titles'>
+        <h2>Comienza la meditación del día de hoy 🙌🏼</h2>
+        <h3>Elige el tipo de meditación que quieres realizar:</h3>
+        </div>
+        <div className='meditations'>
+          {meditations.length > 0 &&
+            meditations.map(meditation => {
+              return (
+                <Meditation key={meditation.id} meditation={meditation}/>
+              )
+            })
         }
       </div>
+      </>
+
     )
 }

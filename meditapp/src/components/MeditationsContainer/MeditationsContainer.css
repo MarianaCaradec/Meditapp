@@ -1,7 +1,16 @@
+.titles {
+    text-align: center;
+    background-color: #892889;
+    padding: .5rem;
+}
+.titles h2, h3 {
+    padding: .5rem;
+    margin: 0;
+}
+
 .meditations {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
 }
 

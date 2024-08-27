@@ -2,6 +2,12 @@
     width: 95vw;
     margin: 1rem 3rem;
 }
+
+.selectedMeditation iframe {
+    border-color: #000;
+    border-width: 1rem;
+}
+
 .selectedMeditation h4 {
     margin-bottom: 2rem;
 }

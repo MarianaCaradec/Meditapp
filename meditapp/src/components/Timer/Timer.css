@@ -1,19 +1,30 @@
+.timerContainer {
+    border: 1.5rem solid #892889;
+    border-radius: 1%;
+    margin: 2.5rem 1rem;
+}
+
 .timer {
+    display: flex;
+    justify-content: center;
     font-size: 4rem;
     color: #e6e3db;
     font-weight: bold;
-    margin: 3rem 41rem;
+    margin: 2rem 6.2rem;
 }
 
 .buttons {
     display: flex;
-    padding: 2rem;
+    justify-content: center;
+    margin: 2rem;
     font-size: 3rem;
 }
 
 .start, .pause {
     color: #e6e3db;
     background-color: #892889;
+    padding: 2rem;
+    margin: 1rem;
 }
 .start:focus, .pause:focus {
     color: #B865B8;
