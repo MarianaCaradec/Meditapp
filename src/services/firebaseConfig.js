@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB25AUOJBy7yXvLjOHMbBdCUcWzefjnavc",
-    authDomain: "meditapp-b20e4.firebaseapp.com",
-    projectId: "meditapp-b20e4",
-    storageBucket: "meditapp-b20e4.appspot.com",
-    messagingSenderId: "401699193591",
-    appId: "1:401699193591:web:58c9c79d0c551ceece89f2"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.API_KEY
 };
 
 // Initialize Firebase
