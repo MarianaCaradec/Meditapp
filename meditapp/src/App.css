@@ -8,6 +8,7 @@ body {
   background-color: #B865B8;
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
