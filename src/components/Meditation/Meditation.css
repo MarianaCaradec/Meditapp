@@ -23,3 +23,22 @@
 .button:hover {
     background-color: #d5d3cd;
 }
+
+/* desde desktop a tablet (768 a 1024px) */
+@media screen and (max-width: 1024px){
+    .meditation {
+        margin: 0;
+        width: 25vw;
+    }
+    .button {
+        margin: .5rem 0 5rem 5rem;
+    }
+}
+
+/* desde tablet a mobile (320 a 768px) */
+@media screen and (max-width: 768px){
+    .meditation{
+        width: 50vw;
+        margin: 0 12rem;
+    }
+}

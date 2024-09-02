@@ -1,7 +1,7 @@
 .navegacion {
     background-color: #e6e3db;
     width: 100vw;
-    height: 17vh;
+    height: 18vh;
     display: flex;
     flex-direction: space-around;
     justify-content: center;
@@ -28,8 +28,33 @@
     justify-content: center;
     align-items: center;
     font-size: 2.6rem;
-    
 }
 .logo img {
     width: 5vw;
+}
+
+/* desde desktop a tablet (768 a 1024px) */
+@media screen and (max-width: 1024px){
+    .navegacion {
+        height: 10vh;
+    }
+    .logo {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+}
+
+/* desde tablet a mobile (320 a 768px) */
+@media screen and (max-width: 768px){
+    .navegacion {
+        display: block;
+        height: 12vh;
+    }
+    .link h2 {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .logo img {
+        width: 7vw;
+    }
 }

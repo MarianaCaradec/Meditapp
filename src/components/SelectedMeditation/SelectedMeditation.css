@@ -11,3 +11,10 @@
 .selectedMeditation h4 {
     margin-bottom: 2rem;
 }
+
+/* desde tablet a mobile (320 a 768px) */
+@media screen and (max-width: 1024px){
+    .selectedMeditation {
+        margin: 0 .5rem 0;
+    }
+}
