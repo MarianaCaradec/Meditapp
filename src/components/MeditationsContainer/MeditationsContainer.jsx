@@ -24,7 +24,9 @@ export const MeditationsContainer = () => {
     }, [])
 
     if(loading) {
+      return (
         <h2>Cargando...</h2>
+      )
     }
 
     return (

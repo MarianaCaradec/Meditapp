@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+
 import {NavBar} from './components/NavBar/NavBar'
 import {MeditationsContainer} from './components/MeditationsContainer/MeditationsContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -7,10 +7,9 @@ import SelectedMeditation from './components/SelectedMeditationContainer/Selecte
 import Info from './components/Info/Info'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+    
     <BrowserRouter>
     <NavBar/>
     
