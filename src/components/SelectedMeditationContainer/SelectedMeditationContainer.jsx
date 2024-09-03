@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+
 import { dataBase } from '../../services/firebaseConfig'
 import {getDoc, doc} from 'firebase/firestore'
+
 import SelectedMeditation from '../SelectedMeditation/SelectedMeditation'
 
 const SelectedMeditationContainer = () => {
