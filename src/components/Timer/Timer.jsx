@@ -36,14 +36,6 @@ const Timer = () => {
         setIsActive(false)
     }
 
-    const finishTimer = () => {
-        minutes >= 10 && setIsActive(false)
-    }
-
-    if(minutes >= 10) {
-        finishTimer()
-    }
-
     return (
         <div className='timerContainer'>
             <div className='timer'>{minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}</div>
